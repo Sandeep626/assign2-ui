@@ -1,7 +1,7 @@
 package com.singh;
 
-import com.singh.interceptor.Logged;
 import com.singh.entity.Inventory;
+import com.singh.interceptor.Logged;
 import com.singh.inventory.InventoryService;
 
 import javax.ejb.EJB;
@@ -16,9 +16,10 @@ import java.util.List;
 
 @RequestScoped
 @Named
-public class InventoryBean {
+public class
+InventoryBean {
 
-    @Size(min=2, max=15)
+    @Size(min = 2, max = 15)
     private String name;
 
     @NotEmpty
